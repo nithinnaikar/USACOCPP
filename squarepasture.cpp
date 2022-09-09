@@ -16,7 +16,8 @@ int main(){
 
 	int boundaryWidth = abs(min(rec1_bl_x, rec2_bl_x) - max(rec1_tr_x, rec2_tr_x));
 	int boundaryLength = abs(min(rec1_bl_y, rec2_bl_y) - max(rec1_tr_y, rec2_tr_y));
-
+	
+	// since all coordinate values are in the range 1...10 
 	for (int sideLength = 1; sideLength <= 10; sideLength++){
 		if (sideLength >= boundaryWidth && sideLength >= boundaryLength){
 			fout << pow(sideLength, 2);
