@@ -17,11 +17,16 @@ int main(){
 	int boundaryWidth = abs(min(rec1_bl_x, rec2_bl_x) - max(rec1_tr_x, rec2_tr_x));
 	int boundaryLength = abs(min(rec1_bl_y, rec2_bl_y) - max(rec1_tr_y, rec2_tr_y));
 	
- 
+ 	/* initially implemented a loop to finish out the problem
 	for (int sideLength = 1; sideLength <= 10; sideLength++){
 		if (sideLength >= boundaryWidth && sideLength >= boundaryLength){
 			fout << pow(sideLength, 2);
 			break;
 		}
-	}
+	} */
+	
+	// Saw that I could optimize the solution with this 
+	int sideLength = max(boundaryWidth, boundaryLength);
+	fout << pow(sideLength, 2);
+	// While both run in constant time, the latter is more satisfactory and will scale if the inputs aren't of trivial size 
 }
