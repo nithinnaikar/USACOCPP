@@ -1,4 +1,5 @@
 // Source: https://usaco.guide/general/io
+// 9/10 test cases
 
 #include <fstream>
 using namespace std;
