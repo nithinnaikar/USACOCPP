@@ -1,4 +1,4 @@
-// Source: https://usaco.guide/general/io
+// thanks to Pavan Yeddanapudi implementation 
 
 #include <bits/stdc++.h>
 using namespace std;
