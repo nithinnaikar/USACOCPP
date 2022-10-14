@@ -1,5 +1,5 @@
 // Source: https://usaco.guide/general/io
-
+// Thank you to Project Starcoder on YT for algorithm help
 #include <bits/stdc++.h>
 using namespace std;
 
